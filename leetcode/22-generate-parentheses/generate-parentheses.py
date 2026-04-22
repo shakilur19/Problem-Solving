@@ -3,7 +3,7 @@ class Solution:
         ans = []
         
         def dfs(path, open_count, close_count):
-            if len(path) == (2 * n):
+            if open_count == close_count == n:
                 ans.append(path)
                 return
 
